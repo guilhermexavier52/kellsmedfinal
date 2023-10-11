@@ -1,0 +1,293 @@
+:root {
+    --color-azul: #0FAFDF;
+}
+
+* {
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--color-azul);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16%;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    color: #fff;
+}
+
+header nav ul li {
+    cursor: pointer;
+    position: relative;
+
+}
+
+header nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    transition: .3s;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #0FAFDF;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.btn:active {
+    box-shadow: inset -1px 1px 0 #016b8b;
+    font-size: 1.69rem;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../image/pexels-pavel-danilyuk-8442099.svg), var(--color-azul);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color: #e7e6e6;
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: #e7e6e6;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.sobre {
+    display: flex;
+}
+
+.sobre .content {
+    max-width: 80%;
+
+}
+
+.sobre .content h3 {
+    font-size: 3rem;
+    color: #000;
+}
+
+.sobre .content span {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+.atendimento { 
+    position: relative; 
+    top: 69px;
+    left: -30px;
+    
+}
+
+.teste {
+    background-color: #0FAFDF;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 0.2rem 0;
+    line-height: 1.9;
+    color: #fff;
+    min-width: 135%;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+} 
+
+
+
+    .seguranca{
+        background-color: #0FAFDF;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        padding: 0.2rem 0;
+        line-height: 1.9;
+        color: #fff;
+        margin-top: 20px;
+        max-width: 80%;
+    }
+.teste li, .seguranca li{
+    margin-left: 35px;
+}
+.comp .listas{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px ;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.comp .listas ul{
+    background-color: #fb7d23;
+   padding-right: 15px;
+}
+.comp h5{
+    font-size: 36px;
+}
+.sobreimg{
+    max-width: 250px;
+  
+}
+.nos{
+    background-color: #0FAFDF;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px ;
+    padding: 0;
+    
+}
+.nos h2{
+    text-align: center;
+}
+
+.nos p {
+    padding-left: 15px;
+}
+
+.nos div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    
+}
+.mapa{
+    background-color: #eee;
+    display: flex;
+    align-items:center ;
+}
+footer p {
+    text-align: center;
+    font-size: 16px;
+    
+}
+table td,
+table th {
+    border: 2px solid #ccc;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+* {
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-submit {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #0FAFDF;
+    color: #fff;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn-submit:active {
+    box-shadow: inset -1px 1px 0 #016b8b;
+    font-size: 1.69rem;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: #0FAFDF;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #0FAFDF;
+    transition: 0.3s;
+}
+
+.text-form {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.text-form2 {
+    font-size: 3rem;
+    color: #0FAFDF;
+    padding: 10px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: black
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo textarea {
+    
+    padding: 0.2em;
+    border: 1px solid #0FAFDF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    width: 60%;
+    height: 30px;
+    letter-spacing: 2px;
+
+}
